@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los más vendidos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.css"
+    />
+    <style>
+      #myCarousel {
+        --f-carousel-spacing: 10px;
+        --f-carousel-slide-width: 100%;
+        --f-progress-color: #ffcc00;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu container">
+        <a href="index.html" style="cursor: pointer"
+          ><img src="img/rafiki.png" alt="Rafiki Logo" class="logo"
+        /></a>
+        <p>
+            <h3>RAFIKI BOOK STORE</h3>
+            </p>
+
+        <nav class="navbar">
+          <ul>
+            <li><a href="géneros.html">GÉNEROS</a></li>
+            <li><a href="galeria.html">POPULARES</a></li>
+            <li><a href="formulario.html">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-image">
+      <div class="gallery-container">
+        <h1>Los más vendidos</h1>
+        <div class="f-carousel" id="myCarousel">
+          <div class="f-carousel__slide">
+            <img src="img/sherlock.jpg" alt="Sherlock" />
+          </div>
+          <div class="f-carousel__slide">
+            <img src="img/don quijote.png" alt="Don Quijote de la Mancha" />
+          </div>
+          <div class="f-carousel__slide">
+            <img src="img/kafka.png" alt="La Metamorfosis" />
+          </div>
+          <div class="f-carousel__slide">
+            <img src="img/beauvoir.jpg" alt="El segundo sexo" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="social-media">
+        <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="img/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
+      </div>
+      <div>
+      <p><a href="https://docs.google.com/presentation/d/12jBheCHd6xgPfjBjGF_FgBuIWvJqAIFKy8Sn0hPQGz4/edit#slide=id.p">ALEJO IWAN</a></p>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar..." />
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.umd.js"></script>
+    <script>
+      new Carousel(document.getElementById("myCarousel"), {
+        Autoplay: {
+          timeout: 2000,
+        },
+      });
+    </script>
+  </body>
+</html>
